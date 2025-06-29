@@ -146,59 +146,79 @@
       margin-bottom: 15px;
     }
     
-    /* About Section */
-    .about-section {
-      padding: 80px 0;
-      background-color: var(--section-bg);
-      transition: background-color 0.3s ease;
+      /* About Section */
+        .about-section {
+      background-color: #f8f9fa;
+      position: relative;
+      overflow: hidden;
     }
     
-    .about-section img {
-      max-width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    .gallery-item {
+      transition: all 0.3s ease;
+      position: relative;
     }
     
-    .about-content h2 {
-      color: var(--bosch-red);
-      font-weight: 700;
-      margin-bottom: 20px;
+    .gallery-item:hover {
+      transform: translateY(-5px);
     }
     
-    /* Contact Section */
-    .contact-section {
-      padding: 80px 0;
-      background-color: var(--contact-bg);
-      transition: background-color 0.3s ease;
+    .gallery-item img {
+      transition: transform 0.5s ease;
     }
     
-    .contact-info {
-      background-color: var(--contact-card);
-      border-radius: 10px;
-      padding: 30px;
-      height: 100%;
-      transition: background-color 0.3s ease;
+    .gallery-item:hover img {
+      transform: scale(1.05);
     }
     
-    .contact-info i {
-      color: var(--bosch-red);
-      font-size: 1.5rem;
-      margin-right: 10px;
+    .gallery-caption {
+      border-top: 1px solid #eee;
     }
     
-    /* Form Elements */
-    .form-control {
-      background-color: var(--card-bg);
-      color: var(--text-color);
-      border: 1px solid var(--section-bg);
-      transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    .feature-list h5 {
+      font-size: 1.1rem;
+      color: #333;
     }
     
-    .form-control:focus {
-      background-color: var(--card-bg);
-      color: var(--text-color);
-      border-color: var(--bosch-red);
-      box-shadow: 0 0 0 0.25rem rgba(219, 0, 17, 0.25);
+    .stats-container {
+      border: 1px solid rgba(220, 53, 69, 0.2);
+    }
+      
+      /* Contact Section */
+      .contact-section {
+      position: relative;
+    }
+    
+    .divider {
+      width: 80px;
+      height: 3px;
+      margin: 20px auto;
+    }
+    
+    .contact-card {
+      transition: transform 0.3s;
+      border: 1px solid rgba(220, 53, 69, 0.1);
+    }
+    
+    .contact-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    }
+    
+    .icon-wrapper {
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .social-links a {
+      transition: transform 0.3s;
+    }
+    
+    .social-links a:hover {
+      transform: scale(1.2);
+      opacity: 0.8;
     }
     
     /* Footer */
