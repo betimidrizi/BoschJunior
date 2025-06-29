@@ -306,7 +306,6 @@ body {
 .footer-logo {
   max-width: 200px;
   margin-bottom: 20px;
-  filter: brightness(0) invert(var(--footer-invert, 0));
 }
 
 .footer a {
@@ -322,7 +321,9 @@ body {
 
 [data-theme="dark"] .footer-logo {
   --footer-invert: 1;
+    filter: brightness(0) invert(var(--footer-invert, 0));
 }
+
 
 .social-icons a {
   color: var(--footer-text);
