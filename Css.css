@@ -320,8 +320,12 @@ body {
 }
 
 /* Dark Mode */
-[data-theme="dark"] 
-.footer-logo {
+[data-theme="dark"] .footer-logo {
+  --footer-invert: 1;
+    filter: brightness(0) invert(var(--footer-invert, 0));
+}
+
+[data-theme="dark"] .nav-logo {
   --footer-invert: 1;
     filter: brightness(0) invert(var(--footer-invert, 0));
 }
