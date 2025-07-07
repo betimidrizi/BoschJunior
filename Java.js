@@ -185,7 +185,14 @@ function loadTranslations(lang) {
       // CTA Section
       "cta_question": "Keni nevojë për ndihmë me automjetin tuaj?",
       "cta_offer": "Rezervoni një termin tani dhe përfitoni inspektim!",
-      "cta_button": "Rezervo Tani"
+      "cta_button": "Rezervo Tani",
+      // Left column Gallery items
+      "gallery_caption1": "Punëtoria jonë e pajisur me teknologji moderne",
+      "gallery_caption2": "Këtu çdo detaj kontrollohet me kujdes",
+      // Right column Gallery items
+      "gallery_caption3": "Punë e organizuar, rezultate të shpejta",
+      "gallery_caption4": "Ambient i pastër dhe i sigurt për çdo automjet",
+      "gallery_caption5": "Mikpritje me përkushtim, shërbim me respekt"
     },
     mk: {
       // Navbar
@@ -241,7 +248,14 @@ function loadTranslations(lang) {
       // CTA Section
       "cta_question": "Дали ви треба помош за вашето возило?",
       "cta_offer": "Резервирајте термин сега и добијте бесплатен преглед!",
-      "cta_button": "Резервирај сега"
+      "cta_button": "Резервирај сега",
+      // Left column Gallery items
+      "gallery_caption1": "Нашата работилница опремена со модерна технологија",
+      "gallery_caption2": "Овде секој детал се проверува внимателно",
+      // Right column Gallery items
+      "gallery_caption3": "Организирана работа, брзи резултати",
+      "gallery_caption4": "Чиста и безбедна средина за секое возило",
+      "gallery_caption5": "Посветен прием, услуга со почит"
     }
   };
   
