@@ -368,8 +368,20 @@ const preferredLanguage = localStorage.getItem('preferredLanguage') || 'sq';
 setLanguage(preferredLanguage);
 
 // Animations on website
-  AOS.init({
+AOS.init({
     duration: 800, // animation duration in ms
     easing: 'ease-in-out',
     once: true     // only animate once
-  });
+});
+
+// Scroll-To-Top Button
+const mybutton = document.getElementById("scrollTopBtn");
+window.onscroll = function() {
+  mybutton.style.display = (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) 
+    ? "block" : "none";
+};
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

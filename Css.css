@@ -43,6 +43,23 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Scroll-To-Top Button */
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #dc3545;
+  color: white;
+  cursor: pointer;
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+
 /* Navbar */
 .navbar {
   background-color: var(--navbar-bg) !important;
