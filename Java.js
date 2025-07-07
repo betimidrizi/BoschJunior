@@ -152,18 +152,40 @@ function loadTranslations(lang) {
       "electronic_feature1": "Sistemet e kompjuterizimit",
       "electronic_feature2": "Senzorët dhe instrumentet",
       "electronic_feature3": "Ndërrimin dhe riparimin e instalimit",
+      // Service Card 2
+      "electrical_diagnostics_title": "Diagnostikim Elektrik",
+      "electrical_diagnostics_desc": "Zbulim të saktë të problemeve elektronike me skanerë profesionale Bosch.",
+      "electrical_feature1": "Diagnostikim kompjuterik",
+      "electrical_feature2": "Sistemi i ndriçimit",
+      "electrical_feature3": "Kontrollë sensorësh",
       // Service Card 3
       "starter_service_title": "Servisim Starteri",
       "starter_service_desc": "Diagnostikim, riparim dhe zëvendësim i sistemit të startimit për performancë optimale.",
       "starter_feature1": "Testim dhe diagnostikim",
       "starter_feature2": "Riparim i starterit",
       "starter_feature3": "Zëvendësim i brushave",
+      // Service Card 4
+      "periodic_maintenance_title": "Mirëmbajtje Periodike",
+      "periodic_maintenance_desc": "Programe personalizuar sipas rekomandimeve të prodhuesit.",
+      "maintenance_feature1": "Inspektime teknike",
+      "maintenance_feature2": "Zëvendësime parandaluese",
+      "maintenance_feature3": "Raportet e gjendjes",
       // Service Card 5
       "alternator_service_title": "Servisim Alternatori",
       "alternator_service_desc": "Diagnostikim, riparim dhe mirëmbajtje e alternatorit për sistem elektrik optimal.",
       "alternator_feature1": "Matje e tensionit të daljes",
       "alternator_feature2": "Ndërrim i rrotullave dhe komponentëve të dëmtuar",
-      "alternator_feature3": "Riparim ose zëvendësim i mbështjelljeve"
+      "alternator_feature3": "Riparim ose zëvendësim i mbështjelljeve",
+      // Service Card 6
+      "battery_service_title": "Bateri dhe Ngarkim",
+      "battery_service_desc": "Zgjidhje komplete për sistemin elektrik të automjetit.",
+      "battery_feature1": "Testim gjendje baterie",
+      "battery_feature2": "Zëvendësim profesional",
+      "battery_feature3": "Sistemet e ngarkimit",
+      // CTA Section
+      "cta_question": "Keni nevojë për ndihmë me automjetin tuaj?",
+      "cta_offer": "Rezervoni një termin tani dhe përfitoni inspektim!",
+      "cta_button": "Rezervo Tani"
     },
     mk: {
       // Navbar
@@ -186,18 +208,40 @@ function loadTranslations(lang) {
       "electronic_feature1": "Компјутеризирани системи",
       "electronic_feature2": "Сензори и инструменти",
       "electronic_feature3": "Менување и репарација на инсталација",
+      // Service Card 2
+      "electrical_diagnostics_title": "Електрична дијагностика",
+      "electrical_diagnostics_desc": "Прецизно откривање на електронски проблеми со професионални Bosch скенери.",
+      "electrical_feature1": "Компјутерска дијагностика",
+      "electrical_feature2": "Систем за осветлување",
+      "electrical_feature3": "Контрола на сензори",
       // Service Card 3
       "starter_service_title": "Сервисирање на стартер",
       "starter_service_desc": "Дијагностика, поправка и замена на системот за стартување за оптимални перформанси.",
       "starter_feature1": "Тестирање и дијагностика",
       "starter_feature2": "Поправка на стартер",
       "starter_feature3": "Менување на четконосач",
+      // Service Card 4
+      "periodic_maintenance_title": "Периодично одржување",
+      "periodic_maintenance_desc": "Персонализирани програми според препораките на производителот.",
+      "maintenance_feature1": "Технички инспекции",
+      "maintenance_feature2": "Превентивни замени",
+      "maintenance_feature3": "Извештаи за состојба",
       // Service Card 5
       "alternator_service_title": "Сервисирање на алтернатор",
       "alternator_service_desc": "Дијагностика, поправка и одржување на алтернаторот за оптимален електричен систем.",
       "alternator_feature1": "Мерење на излезен напон",
       "alternator_feature2": "Замена на оштетени ролери и компоненти",
-      "alternator_feature3": "Поправка или замена на калеми"
+      "alternator_feature3": "Поправка или замена на калеми",
+      // Service Card 6
+      "battery_service_title": "Батерии и полнење",
+      "battery_service_desc": "Комплетни решенија за електричниот систем на возилото.",
+      "battery_feature1": "Тестирање на состојба на батерија",
+      "battery_feature2": "Професионална замена",
+      "battery_feature3": "Системи за полнење",
+      // CTA Section
+      "cta_question": "Дали ви треба помош за вашето возило?",
+      "cta_offer": "Резервирајте термин сега и добијте бесплатен преглед!",
+      "cta_button": "Резервирај сега"
     }
   };
   
