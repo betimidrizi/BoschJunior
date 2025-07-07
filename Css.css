@@ -375,6 +375,30 @@ body {
   color: white;
 }
 
+/* Language Selector Styles */
+.nav-item.dropdown .dropdown-toggle::after {
+  display: none;
+}
+
+.nav-item.dropdown .dropdown-menu {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.nav-item.dropdown .dropdown-item {
+  padding: 8px 15px;
+  font-weight: 500;
+}
+
+.nav-item.dropdown .dropdown-item.active {
+  background-color: var(--bosch-red);
+  color: white;
+}
+
+.nav-item.dropdown .dropdown-item:not(.active):hover {
+  background-color: rgba(219, 0, 17, 0.1);
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .hero-section {

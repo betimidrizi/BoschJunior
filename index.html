@@ -25,21 +25,31 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home</a>
+            <a class="nav-link active" href="index.html" data-i18n="home">Kryefaqja</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#services">Shërbimet</a>
+            <a class="nav-link" href="#services" data-i18n="services">Shërbimet</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">Rreth Nesh</a>
+            <a class="nav-link" href="#about" data-i18n="about">Rreth Nesh</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Kontakt</a>
+            <a class="nav-link" href="#contact" data-i18n="contact">Kontakt</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#location">Lokacioni</a>
+            <a class="nav-link" href="#location" data-i18n="location">Lokacioni</a>
           </li>
           <li class="nav-item">
+            <!-- Add this to your navbar, before the theme toggle -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-language"></i> Language
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                <li><a class="dropdown-item active" href="#" data-lang="sq">Shqip</a></li>
+                <li><a class="dropdown-item" href="#" data-lang="mk">Македонски</a></li>
+              </ul>
+            </li>
             <button class="theme-toggle" id="themeToggle">
               <i class="fas fa-moon"></i>
             </button>
@@ -52,9 +62,9 @@
   <!-- Hero Section -->
   <section class="hero-section">
     <div class="container">
-      <h1>Shërbime Profesionale për Automjetet Tuaja</h1>
-      <p>Ne ofrojmë zgjidhjet më të mira për riparimin dhe mirëmbajtjen e automjeteve tuaja. Frenat, gomat, vaji dhe shumë më tepër.</p>
-      <a href="#contact" class="btn btn-danger btn-lg">Na Kontaktoni</a>
+      <h1 data-i18n="hero_title">Shërbime Profesionale për Automjetet Tuaja</h1>
+      <p data-i18n="hero_text">Ne ofrojmë zgjidhjet më të mira për riparimin dhe mirëmbajtjen e automjeteve tuaja. Frenat, gomat, vaji dhe shumë më tepër.</p>
+      <a href="#contact" class="btn btn-danger btn-lg" data-i18n="contact_us">Na Kontaktoni</a>
     </div>
   </section>
 
@@ -70,20 +80,20 @@
     
     <div class="row g-4">
       <!-- Service Card 1 -->
-      <div class="col-lg-4 col-md-6">
-        <div class="service-card h-100 p-4 rounded-3 shadow-sm bg-white">
-          <div class="service-icon bg-danger bg-opacity-10 text-danger rounded-3 mb-4">
-            <i class="fas fa-car-crash fa-2x"></i>
-          </div>
-          <h3 class="h4 mb-3">Riparime Mekanike</h3>
-          <p class="text-muted mb-4">Diagnostikim dhe riparime të plota për të gjitha sistemet mekanike nga teknikë të certifikuar Bosch.</p>
-          <ul class="service-features list-unstyled">
-            <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i>Suspension dhe drejtim</li>
-            <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i>Sistem frenimi</li>
-            <li><i class="fas fa-check-circle text-danger me-2"></i>Transmisioni</li>
-          </ul>
-        </div>
-      </div>
+<div class="col-lg-4 col-md-6">
+  <div class="service-card h-100 p-4 rounded-3 shadow-sm bg-white">
+    <div class="service-icon bg-danger bg-opacity-10 text-danger rounded-3 mb-4">
+      <i class="fas fa-microchip fa-2x"></i> <!-- Changed icon to better represent electronics -->
+    </div>
+    <h3 class="h4 mb-3" data-i18n="electronic_repairs_title">Riparime Elektronike</h3>
+    <p class="text-muted mb-4" data-i18n="electronic_repairs_desc">Diagnostikim dhe riparime të sistemeve elektronike dhe elektrike të automjeteve me pajisje speciale.</p>
+    <ul class="service-features list-unstyled">
+      <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="electronic_feature1">Sistemet e kompjuterizimit</span></li>
+      <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="electronic_feature2">Senzorët dhe instrumentet</span></li>
+      <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="electronic_feature3">Ndërrimin dhe riparimin e instalimit</span></li>
+    </ul>
+  </div>
+</div>
       
       <!-- Service Card 2 -->
       <div class="col-lg-4 col-md-6">
@@ -102,20 +112,20 @@
       </div>
       
       <!-- Service Card 3 -->
-      <div class="col-lg-4 col-md-6">
-        <div class="service-card h-100 p-4 rounded-3 shadow-sm bg-white">
-          <div class="service-icon bg-danger bg-opacity-10 text-danger rounded-3 mb-4">
-            <i class="fas fa-oil-can fa-2x"></i>
-          </div>
-          <h3 class="h4 mb-3">Ndryshim Vaji</h3>
-          <p class="text-muted mb-4">Ndryshim profesional i vajit me produkte origjinale për jetëgjatësi të motorrit.</p>
-          <ul class="service-features list-unstyled">
-            <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i>Vajra sintetikë dhe mineralë</li>
-            <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i>Filtrat origjinalë</li>
-            <li><i class="fas fa-check-circle text-danger me-2"></i>Kontrollë niveleve</li>
-          </ul>
-        </div>
-      </div>
+<div class="col-lg-4 col-md-6">
+  <div class="service-card h-100 p-4 rounded-3 shadow-sm bg-white">
+    <div class="service-icon bg-danger bg-opacity-10 text-danger rounded-3 mb-4">
+      <i class="fas fa-car-battery fa-2x"></i> <!-- Changed icon to better represent starter service -->
+    </div>
+    <h3 class="h4 mb-3" data-i18n="starter_service_title">Servisim Starteri</h3>
+    <p class="text-muted mb-4" data-i18n="starter_service_desc">Diagnostikim, riparim dhe zëvendësim i sistemit të startimit për performancë optimale.</p>
+    <ul class="service-features list-unstyled">
+      <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="starter_feature1">Testim dhe diagnostikim</span></li>
+      <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="starter_feature2">Riparim i starterit</span></li>
+      <li><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="starter_feature3">Zëvendësim i brushave</span></li>
+    </ul>
+  </div>
+</div>
       
       <!-- Service Card 4 -->
       <div class="col-lg-4 col-md-6">
@@ -134,20 +144,20 @@
       </div>
       
       <!-- Service Card 5 -->
-      <div class="col-lg-4 col-md-6">
-        <div class="service-card h-100 p-4 rounded-3 shadow-sm bg-white">
-          <div class="service-icon bg-danger bg-opacity-10 text-danger rounded-3 mb-4">
-            <i class="fas fa-cogs fa-2x"></i>
-          </div>
-          <h3 class="h4 mb-3">Servisim Motorri</h3>
-          <p class="text-muted mb-4">Riparime komplekse të motorrit me garanci cilësie.</p>
-          <ul class="service-features list-unstyled">
-            <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i>Diagnostikim elektronik</li>
-            <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i>Rregullime inxhinierie</li>
-            <li><i class="fas fa-check-circle text-danger me-2"></i>Testim performancë</li>
-          </ul>
-        </div>
-      </div>
+<div class="col-lg-4 col-md-6">
+  <div class="service-card h-100 p-4 rounded-3 shadow-sm bg-white">
+    <div class="service-icon bg-danger bg-opacity-10 text-danger rounded-3 mb-4">
+      <i class="fas fa-bolt fa-2x"></i> <!-- Changed icon to better represent alternator service -->
+    </div>
+    <h3 class="h4 mb-3" data-i18n="alternator_service_title">Servisim Alternatori</h3>
+    <p class="text-muted mb-4" data-i18n="alternator_service_desc">Diagnostikim, riparim dhe mirëmbajtje e alternatorit për sistem elektrik optimal.</p>
+    <ul class="service-features list-unstyled">
+      <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="alternator_feature1">Matje e tensionit të daljes</span></li>
+      <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="alternator_feature2">Ndërrim i rrotullave dhe komponentëve të dëmtuar</span></li>
+      <li><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="alternator_feature3">Riparim ose zëvendësim i mbështjelljeve</span></li>
+    </ul>
+  </div>
+</div>
       
       <!-- Service Card 6 -->
       <div class="col-lg-4 col-md-6">
@@ -241,7 +251,7 @@
             <i class="fas fa-check-circle fa-2x"></i>
           </div>
           <div>
-            <p class="lead mb-0">Biznes familjar me traditë 15-vjeçare në shërbimet për automjete</p>
+            <p class="lead mb-0">Biznes familjar me traditë 20-vjeçare në shërbimet për automjete</p>
           </div>
         </div>
         
@@ -283,7 +293,7 @@
         <div class="stats-container bg-light p-4 rounded-3">
           <div class="row text-center">
             <div class="col-4">
-              <h3 class="text-danger mb-0 fw-bold">15+</h3>
+              <h3 class="text-danger mb-0 fw-bold">20+</h3>
               <p class="small mb-0">Vjet Përvojë</p>
             </div>
             <div class="col-4">
@@ -327,7 +337,7 @@
             <i class="fas fa-map-marker-alt fa-2x"></i>
           </div>
           <h4 class="mb-3">Lokacioni</h4>
-          <p class="mb-4">Metodija Andonov Chento, Shkup</p>
+          <p class="mb-4">Metodija Andonov Chento  105B, Shkup</p>
           <a href="#location" class="btn btn-outline-danger">
             <i class="fas fa-directions me-2"></i>Shiko në Hartë
           </a>
@@ -361,8 +371,8 @@
           </div>
           <h4 class="mb-3">Orari i Punës</h4>
           <ul class="list-unstyled mb-4">
-            <li class="mb-2"><strong>E Hënë - E Premte:</strong> 08:00 - 18:00</li>
-            <li class="mb-2"><strong>E Shtunë:</strong> 09:00 - 14:00</li>
+            <li class="mb-2"><strong>E Hënë - E Premte:</strong> 09:00 - 18:00</li>
+            <li class="mb-2"><strong>E Shtunë:</strong> 10:00 - 15:00</li>
             <li><strong>E Dielë:</strong> Mbyllur</li>
           </ul>
           <div class="badge bg-danger bg-opacity-10 text-danger p-2">
@@ -410,7 +420,7 @@
         <div class="col-lg-4 text-center text-lg-end">
           <h5 class="mb-4">Shërbimet Tona</h5>
           <ul class="list-unstyled">
-            <li><a href="#" class="text-decoration-none" style="color: var(--footer-text);">Riparime Mekanike</a></li>
+            <li><a href="#" class="text-decoration-none" style="color: var(--footer-text);">Riparime Elektronike</a></li>
             <li><a href="#" class="text-decoration-none" style="color: var(--footer-text);">Diagnostikim Elektrik</a></li>
             <li><a href="#" class="text-decoration-none" style="color: var(--footer-text);">Mirëmbajtje Periodike</a></li>
             <li><a href="#" class="text-decoration-none" style="color: var(--footer-text);">Servisim Motorri</a></li>

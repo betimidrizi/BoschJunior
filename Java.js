@@ -99,3 +99,103 @@
         navbar.classList.remove('navbar-scrolled');
       }
     });
+
+
+    // Language Switching Functionality
+document.querySelectorAll('[data-lang]').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const lang = this.getAttribute('data-lang');
+    setLanguage(lang);
+  });
+});
+
+function setLanguage(lang) {
+  // Update active state in dropdown
+  document.querySelectorAll('[data-lang]').forEach(el => {
+    el.classList.toggle('active', el.getAttribute('data-lang') === lang);
+  });
+  
+  // Update HTML lang attribute
+  document.documentElement.lang = lang;
+  
+  // Save preference
+  localStorage.setItem('preferredLanguage', lang);
+  
+  // Load translations
+  loadTranslations(lang);
+}
+
+function loadTranslations(lang) {
+  // Here you would typically fetch translations from a JSON file
+  // For this example, we'll use an object with translations
+  
+  const translations = {
+    sq: {
+      "home": "Kryefaqja",
+      "services": "Shërbimet",
+      "about": "Rreth Nesh",
+      "contact": "Kontakt",
+      "location": "Lokacioni",
+      "hero_title": "Shërbime Profesionale për Automjetet Tuaja",
+      "hero_text": "Ne ofrojmë zgjidhjet më të mira për riparimin dhe mirëmbajtjen e automjeteve tuaja. Frenat, gomat, vaji dhe shumë më tepër.",
+      "contact_us": "Na Kontaktoni",
+      // Add all other text strings from your site
+      "electronic_repairs_title": "Riparime Elektronike",
+      "electronic_repairs_desc": "Diagnostikim dhe riparime të sistemeve elektronike dhe elektrike të automjeteve me pajisje speciale.",
+      "electronic_feature1": "Sistemet e kompjuterizimit",
+      "electronic_feature2": "Senzorët dhe instrumentet",
+      "electronic_feature3": "Ndërrimin dhe riparimin e instalimit",
+          // ... existing translations ...
+      "starter_service_title": "Servisim Starteri",
+      "starter_service_desc": "Diagnostikim, riparim dhe zëvendësim i sistemit të startimit për performancë optimale.",
+      "starter_feature1": "Testim dhe diagnostikim",
+      "starter_feature2": "Riparim i starterit",
+      "starter_feature3": "Zëvendësim i brushave",
+          // ... existing translations ...
+    "alternator_service_title": "Servisim Alternatori",
+    "alternator_service_desc": "Diagnostikim, riparim dhe mirëmbajtje e alternatorit për sistem elektrik optimal.",
+    "alternator_feature1": "Matje e tensionit të daljes",
+    "alternator_feature2": "Ndërrim i rrotullave dhe komponentëve të dëmtuar",
+    "alternator_feature3": "Riparim ose zëvendësim i mbështjelljeve"
+    },
+    mk: {
+      "home": "Почетна",
+      "services": "Услуги",
+      "about": "За Нас",
+      "contact": "Контакт",
+      "location": "Локација",
+      "hero_title": "Професионални услуги за вашите возила",
+      "hero_text": "Ние нудиме најдобри решенија за поправка и одржување на вашите возила. Кочници, гуми, масло и многу повеќе.",
+      "contact_us": "Контактирајте не",
+      // Add all other text strings from your site
+      "electronic_repairs_title": "Електронски поправки",
+      "electronic_repairs_desc": "Дијагностика и поправка на електронски и електрични системи на возила со специјална опрема.",
+      "electronic_feature1": "Компјутеризирани системи",
+      "electronic_feature2": "Сензори и инструменти",
+      "electronic_feature3": "Менување и репарација на инсталација",
+          // ... existing translations ...
+      "starter_service_title": "Сервисирање на стартер",
+      "starter_service_desc": "Дијагностика, поправка и замена на системот за стартување за оптимални перформанси.",
+      "starter_feature1": "Тестирање и дијагностика",
+      "starter_feature2": "Поправка на стартер",
+      "starter_feature3": "Менување на четконосач",
+          // ... existing translations ...
+    "alternator_service_title": "Сервисирање на алтернатор",
+    "alternator_service_desc": "Дијагностика, поправка и одржување на алтернаторот за оптимален електричен систем.",
+    "alternator_feature1": "Мерење на излезен напон",
+    "alternator_feature2": "Замена на оштетени ролери и компоненти",
+    "alternator_feature3": "Поправка или замена на калеми"
+    }
+  };
+  
+  // Update all elements with data-i18n attribute
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    el.textContent = translations[lang][key] || translations['sq'][key];
+  });
+}
+
+// Initialize language
+const preferredLanguage = localStorage.getItem('preferredLanguage') || 'sq';
+setLanguage(preferredLanguage);
