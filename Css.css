@@ -366,7 +366,6 @@ html {
   scrollbar-color: var(--bosch-red) #2a2a2a;
 }
 
-
 /* Dark Mode */
 [data-theme="dark"] .footer-logo {
   --footer-invert: 1;

@@ -366,3 +366,10 @@ function loadTranslations(lang) {
 // Initialize language
 const preferredLanguage = localStorage.getItem('preferredLanguage') || 'sq';
 setLanguage(preferredLanguage);
+
+// Animations on website
+  AOS.init({
+    duration: 800, // animation duration in ms
+    easing: 'ease-in-out',
+    once: true     // only animate once
+  });
