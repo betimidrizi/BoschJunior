@@ -228,7 +228,18 @@ function loadTranslations(lang) {
       "closed": "Mbyllur",
       "contact_us": "Na Kontaktoni",
       // Social Media Section
-      "follow_us": "Na Ndiqni në Rrjetet Sociale"
+      "follow_us": "Na Ndiqni në Rrjetet Sociale",
+      // Footer
+      "footer_description": "Shërbime profesionale për riparimin dhe mirëmbajtjen e automjeteve në Shkup",
+      "connect_with_us": "Lidhuni me ne",
+      "our_services": "Shërbimet Tona",
+      "service1": "Riparime Elektronike",
+      "service2": "Diagnostikim Elektrik",
+      "service3": "Servisim Starteri",
+      "service4": "Mirëmbajtje Periodike",
+      "service5": "Servisim Alternatori",
+      "service6": "Bateri dhe Ngarkim",
+      "copyright": "© 2025 Bosch Junior. Të gjitha të drejtat e rezervuara."
     },
     mk: {
       // Navbar
@@ -329,7 +340,18 @@ function loadTranslations(lang) {
       "closed": "Затворено",
       "contact_us": "Контактирајте не",
       // Social Media Section
-      "follow_us": "Следете не на социјални мрежи"
+      "follow_us": "Следете не на социјални мрежи",
+      // Footer
+      "footer_description": "Професионални услуги за поправка и одржување на возила во Скопје",
+      "connect_with_us": "Поврзете се со нас",
+      "our_services": "Нашите Услуги",
+      "service1": "Електронски поправки",
+      "service2": "Електрична дијагностика",
+      "service3": "Сервисирање на стартер",
+      "service4": "Периодично одржување",
+      "service5": "Сервисирање на алтернатор",
+      "service6": "Батерии и полнење",
+      "copyright": "© 2025 Bosch Junior. Сите права се задржани."
     }
   };
   
