@@ -132,60 +132,72 @@ function loadTranslations(lang) {
   
   const translations = {
     sq: {
+      // Navbar
       "home": "Kryefaqja",
       "services": "Shërbimet",
       "about": "Rreth Nesh",
       "contact": "Kontakt",
       "location": "Lokacioni",
+      // Hero Section
       "hero_title": "Shërbime Profesionale për Automjetet Tuaja",
       "hero_text": "Ne ofrojmë zgjidhjet më të mira për riparimin dhe mirëmbajtjen e automjeteve tuaja. Frenat, gomat, vaji dhe shumë më tepër.",
       "contact_us": "Na Kontaktoni",
-      // Add all other text strings from your site
+      // Services Section
+      "our_services": "SHËRBIMET TONA",
+      "professional_solutions": "Zgjidhje Profesionale për Automjetin Tuaj",
+      "services_description": "Ofrojmë shërbime të specializuara me teknologji të avancuar dhe pjesë këmbimi të cilësisë së lartë",
+      // Service Card 1
       "electronic_repairs_title": "Riparime Elektronike",
       "electronic_repairs_desc": "Diagnostikim dhe riparime të sistemeve elektronike dhe elektrike të automjeteve me pajisje speciale.",
       "electronic_feature1": "Sistemet e kompjuterizimit",
       "electronic_feature2": "Senzorët dhe instrumentet",
       "electronic_feature3": "Ndërrimin dhe riparimin e instalimit",
-          // ... existing translations ...
+      // Service Card 3
       "starter_service_title": "Servisim Starteri",
       "starter_service_desc": "Diagnostikim, riparim dhe zëvendësim i sistemit të startimit për performancë optimale.",
       "starter_feature1": "Testim dhe diagnostikim",
       "starter_feature2": "Riparim i starterit",
       "starter_feature3": "Zëvendësim i brushave",
-          // ... existing translations ...
-    "alternator_service_title": "Servisim Alternatori",
-    "alternator_service_desc": "Diagnostikim, riparim dhe mirëmbajtje e alternatorit për sistem elektrik optimal.",
-    "alternator_feature1": "Matje e tensionit të daljes",
-    "alternator_feature2": "Ndërrim i rrotullave dhe komponentëve të dëmtuar",
-    "alternator_feature3": "Riparim ose zëvendësim i mbështjelljeve"
+      // Service Card 5
+      "alternator_service_title": "Servisim Alternatori",
+      "alternator_service_desc": "Diagnostikim, riparim dhe mirëmbajtje e alternatorit për sistem elektrik optimal.",
+      "alternator_feature1": "Matje e tensionit të daljes",
+      "alternator_feature2": "Ndërrim i rrotullave dhe komponentëve të dëmtuar",
+      "alternator_feature3": "Riparim ose zëvendësim i mbështjelljeve"
     },
     mk: {
+      // Navbar
       "home": "Почетна",
       "services": "Услуги",
       "about": "За Нас",
       "contact": "Контакт",
       "location": "Локација",
+      // Hero Section
       "hero_title": "Професионални услуги за вашите возила",
       "hero_text": "Ние нудиме најдобри решенија за поправка и одржување на вашите возила. Кочници, гуми, масло и многу повеќе.",
       "contact_us": "Контактирајте не",
-      // Add all other text strings from your site
+      // Services Section
+      "our_services": "НАШИТЕ УСЛУГИ",
+      "professional_solutions": "Професионални решенија за вашето возило",
+      "services_description": "Нудиме специјализирани услуги со напредна технологија и делови од висок квалитет",
+      // Service Card 1
       "electronic_repairs_title": "Електронски поправки",
       "electronic_repairs_desc": "Дијагностика и поправка на електронски и електрични системи на возила со специјална опрема.",
       "electronic_feature1": "Компјутеризирани системи",
       "electronic_feature2": "Сензори и инструменти",
       "electronic_feature3": "Менување и репарација на инсталација",
-          // ... existing translations ...
+      // Service Card 3
       "starter_service_title": "Сервисирање на стартер",
       "starter_service_desc": "Дијагностика, поправка и замена на системот за стартување за оптимални перформанси.",
       "starter_feature1": "Тестирање и дијагностика",
       "starter_feature2": "Поправка на стартер",
       "starter_feature3": "Менување на четконосач",
-          // ... existing translations ...
-    "alternator_service_title": "Сервисирање на алтернатор",
-    "alternator_service_desc": "Дијагностика, поправка и одржување на алтернаторот за оптимален електричен систем.",
-    "alternator_feature1": "Мерење на излезен напон",
-    "alternator_feature2": "Замена на оштетени ролери и компоненти",
-    "alternator_feature3": "Поправка или замена на калеми"
+      // Service Card 5
+      "alternator_service_title": "Сервисирање на алтернатор",
+      "alternator_service_desc": "Дијагностика, поправка и одржување на алтернаторот за оптимален електричен систем.",
+      "alternator_feature1": "Мерење на излезен напон",
+      "alternator_feature2": "Замена на оштетени ролери и компоненти",
+      "alternator_feature3": "Поправка или замена на калеми"
     }
   };
   
