@@ -209,7 +209,26 @@ function loadTranslations(lang) {
       "stat2": "Klientë të Kënaqur",
       "stat3": "Ndihmë Në Rrugë",
       "gallery_button": "Shiko Galerinë",
-      "contact_button": "Na Kontaktoni"
+      "contact_button": "Na Kontaktoni",
+      // Contact Section
+      "contact_title": "Na Gjeni",
+      "contact_subtitle": "Vizitoni punëtorinë tonë ose na kontaktoni direkt",
+      // Contact Card 1: Location
+      "location_title": "Lokacioni",
+      "address": "Metodija Andonov Chento 105B, Shkup",
+      "view_map": "Shiko në Hartë",
+      // Contact Card 2: Phone
+      "phone_title": "Telefoni",
+      "call_now": "Thirr Tani",
+      // Contact Card 3: Hours
+      "hours_title": "Orari i Punës",
+      "weekdays": "E Hënë - E Premte",
+      "saturday": "E Shtunë",
+      "sunday": "E Dielë",
+      "closed": "Mbyllur",
+      "contact_us": "Na Kontaktoni",
+      // Social Media Section
+      "follow_us": "Na Ndiqni në Rrjetet Sociale"
     },
     mk: {
       // Navbar
@@ -286,11 +305,31 @@ function loadTranslations(lang) {
       "feature2_desc": "Напредна технологија за прецизна дијагностика",
       "feature3_title": "Гаранција за Квалитет",
       "feature3_desc": "Гарантираме секоја услуга што ја нудиме",
+      // Stats
       "stat1": "Години Искуство",
       "stat2": "Задоволни Клиенти",
       "stat3": "Помош на Пат",
       "gallery_button": "Види Галерија",
-      "contact_button": "Контактирај не"
+      "contact_button": "Контактирај не",
+      // Contact Section
+      "contact_title": "Најдете не",
+      "contact_subtitle": "Посетете ја нашата работилница или контактирајте не директно",
+      // Contact Card 1: Location
+      "location_title": "Локација",
+      "address": "Методија Андонов Ченто 105Б, Скопје",
+      "view_map": "Погледнете на мапа",
+      // Contact Card 2: Phone
+      "phone_title": "Телефон",
+      "call_now": "Јавете се сега",
+      // Contact Card 3: Hours
+      "hours_title": "Работно време",
+      "weekdays": "Понеделник - Петок",
+      "saturday": "Сабота",
+      "sunday": "Недела",
+      "closed": "Затворено",
+      "contact_us": "Контактирајте не",
+      // Social Media Section
+      "follow_us": "Следете не на социјални мрежи"
     }
   };
   
