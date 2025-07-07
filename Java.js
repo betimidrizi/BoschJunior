@@ -192,7 +192,24 @@ function loadTranslations(lang) {
       // Right column Gallery items
       "gallery_caption3": "Punë e organizuar, rezultate të shpejta",
       "gallery_caption4": "Ambient i pastër dhe i sigurt për çdo automjet",
-      "gallery_caption5": "Mikpritje me përkushtim, shërbim me respekt"
+      "gallery_caption5": "Mikpritje me përkushtim, shërbim me respekt",
+      // Content column
+      "about_badge": "RRETH NESH",
+      "about_title": "Bosch Junior - Ekspertë në Shërbimet Automobilistike",
+      "about_highlight": "Biznes familjar me traditë 20-vjeçare në shërbimet për automjete",
+      "about_description": "Me një histori të pasur dhe pasion për automjetet, ne ofrojmë shërbime të cilësisë së lartë me përdorimin e teknologjisë më të fundit dhe pjesëve origjinale.",
+      "feature1_title": "Teknikë të Certifikuar",
+      "feature1_desc": "Ekipi ynë përmban specialistë të trajnuar nga Bosch",
+      "feature2_title": "Pajisje Moderne",
+      "feature2_desc": "Teknologji e avancuar për diagnostikim të saktë",
+      "feature3_title": "Garancion Cilësie",
+      "feature3_desc": "Garantojmë çdo shërbim që ofrojmë",
+      // Stats
+      "stat1": "Vjet Përvojë",
+      "stat2": "Klientë të Kënaqur",
+      "stat3": "Ndihmë Në Rrugë",
+      "gallery_button": "Shiko Galerinë",
+      "contact_button": "Na Kontaktoni"
     },
     mk: {
       // Navbar
@@ -249,13 +266,31 @@ function loadTranslations(lang) {
       "cta_question": "Дали ви треба помош за вашето возило?",
       "cta_offer": "Резервирајте термин сега и добијте бесплатен преглед!",
       "cta_button": "Резервирај сега",
+      // About Section 
       // Left column Gallery items
       "gallery_caption1": "Нашата работилница опремена со модерна технологија",
       "gallery_caption2": "Овде секој детал се проверува внимателно",
       // Right column Gallery items
       "gallery_caption3": "Организирана работа, брзи резултати",
       "gallery_caption4": "Чиста и безбедна средина за секое возило",
-      "gallery_caption5": "Посветен прием, услуга со почит"
+      "gallery_caption5": "Посветен прием, услуга со почит",
+      // Content column
+      "about_badge": "ЗА НАС",
+      "about_title": "Bosch Junior - Експерти во Автомобилските Услуги",
+      // ... existing translations ...
+      "about_highlight": "Семеен бизнис со 20-годишна традиција во автомобилските услуги",
+      "about_description": "Со богата историја и страст кон автомобилите, нудиме услуги од висок квалитет со користење на најновата технологија и оригинални делови.",
+      "feature1_title": "Сертифицирани Техничари",
+      "feature1_desc": "Нашиот тим содржи специјалисти обучени од Bosch",
+      "feature2_title": "Модерна Опрема",
+      "feature2_desc": "Напредна технологија за прецизна дијагностика",
+      "feature3_title": "Гаранција за Квалитет",
+      "feature3_desc": "Гарантираме секоја услуга што ја нудиме",
+      "stat1": "Години Искуство",
+      "stat2": "Задоволни Клиенти",
+      "stat3": "Помош на Пат",
+      "gallery_button": "Види Галерија",
+      "contact_button": "Контактирај не"
     }
   };
   
