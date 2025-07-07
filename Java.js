@@ -101,7 +101,7 @@
     });
 
 
-    // Language Switching Functionality
+// Language Switching Functionality
 document.querySelectorAll('[data-lang]').forEach(link => {
   link.addEventListener('click', function(e) {
     e.preventDefault();
@@ -126,6 +126,7 @@ function setLanguage(lang) {
   loadTranslations(lang);
 }
 
+// Albanian and Macedonian Language 
 function loadTranslations(lang) {
   // Here you would typically fetch translations from a JSON file
   // For this example, we'll use an object with translations
