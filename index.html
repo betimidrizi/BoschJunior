@@ -15,430 +15,430 @@
 <body>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="Images/bosch-logo.png" alt="Bosch Junior" width="200" class="nav-logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html" data-i18n="home">Kryefaqja</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services" data-i18n="services">Shërbimet</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about" data-i18n="about">Rreth Nesh</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact" data-i18n="contact">Kontakt</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#location" data-i18n="location">Lokacioni</a>
-          </li>
-          <li class="nav-item">
-            <!-- Language -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fas fa-language"></i> Language
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                <li><a class="dropdown-item active" href="#" data-lang="sq">Shqip</a></li>
-                <li><a class="dropdown-item" href="#" data-lang="mk">Македонски</a></li>
-              </ul>
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="Images/bosch-logo.png" alt="Bosch Junior" width="200" class="nav-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html" data-i18n="home">Kryefaqja</a>
             </li>
-            <button class="theme-toggle" id="themeToggle">
-              <i class="fas fa-moon"></i>
-            </button>
-          </li>
-        </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#services" data-i18n="services">Shërbimet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" data-i18n="about">Rreth Nesh</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" data-i18n="contact">Kontakt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#location" data-i18n="location">Lokacioni</a>
+            </li>
+            <li class="nav-item">
+              <!-- Language -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-language"></i> Language
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                  <li><a class="dropdown-item active" href="#" data-lang="sq">Shqip</a></li>
+                  <li><a class="dropdown-item" href="#" data-lang="mk">Македонски</a></li>
+                </ul>
+              </li>
+              <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
   </nav>
 
   <!-- Hero Section -->
   <section class="hero-section">
+      <div class="container">
+        <h1 data-i18n="hero_title">Shërbime Profesionale për Automjetet Tuaja</h1>
+        <p data-i18n="hero_text">Ne ofrojmë zgjidhjet më të mira për riparimin dhe mirëmbajtjen e automjeteve tuaja. Frenat, gomat, vaji dhe shumë më tepër.</p>
+        <a href="#contact" class="btn btn-danger btn-lg" data-i18n="contact_us">Na Kontaktoni</a>
+      </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section py-5">
     <div class="container">
-      <h1 data-i18n="hero_title">Shërbime Profesionale për Automjetet Tuaja</h1>
-      <p data-i18n="hero_text">Ne ofrojmë zgjidhjet më të mira për riparimin dhe mirëmbajtjen e automjeteve tuaja. Frenat, gomat, vaji dhe shumë më tepër.</p>
-      <a href="#contact" class="btn btn-danger btn-lg" data-i18n="contact_us">Na Kontaktoni</a>
+      <div class="text-center mb-5">
+        <span class="section-badge bg-danger text-white mb-3" data-i18n="our_services">SHËRBIMET TONA</span>
+        <h2 class="fw-bold display-5 mb-3" data-i18n="professional_solutions">Zgjidhje Profesionale për Automjetin Tuaj</h2>
+        <p class="lead text-muted mx-auto" style="max-width: 700px;" data-i18n="services_description">Ofrojmë shërbime të specializuara me teknologji të avancuar dhe pjesë këmbimi të cilësisë së lartë</p>
+        <div class="divider mx-auto bg-danger"></div>
+      </div>
+      
+      <div class="row g-4">
+        <!-- Service Card 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card h-100 p-4 rounded-3 shadow-sm bg-white">
+            <div class="service-icon bg-danger bg-opacity-10 text-danger rounded-3 mb-4">
+              <i class="fas fa-microchip fa-2x"></i>
+            </div>
+            <h3 class="h4 mb-3" data-i18n="electronic_repairs_title">Riparime Elektronike</h3>
+            <p class="text-muted mb-4" data-i18n="electronic_repairs_desc">Diagnostikim dhe riparime të sistemeve elektronike dhe elektrike të automjeteve me pajisje speciale.</p>
+            <ul class="service-features list-unstyled">
+              <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="electronic_feature1">Sistemet e kompjuterizimit</span></li>
+              <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="electronic_feature2">Senzorët dhe instrumentet</span></li>
+              <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="electronic_feature3">Ndërrimin dhe riparimin e instalimit</span></li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Service Card 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card h-100 p-4 rounded-3 shadow-sm bg-white">
+            <div class="service-icon bg-danger bg-opacity-10 text-danger rounded-3 mb-4">
+              <i class="fas fa-bolt fa-2x"></i>
+            </div>
+            <h3 class="h4 mb-3" data-i18n="electrical_diagnostics_title">Diagnostikim Elektrik</h3>
+            <p class="text-muted mb-4" data-i18n="electrical_diagnostics_desc">Zbulim të saktë të problemeve elektronike me skanerë profesionale Bosch.</p>
+            <ul class="service-features list-unstyled">
+              <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="electrical_feature1">Diagnostikim kompjuterik</span></li>
+              <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="electrical_feature2">Sistemi i ndriçimit</span></li>
+              <li><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="electrical_feature3">Kontrollë sensorësh</span></li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Service Card 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card h-100 p-4 rounded-3 shadow-sm bg-white">
+            <div class="service-icon bg-danger bg-opacity-10 text-danger rounded-3 mb-4">
+              <i class="fas fa-car-battery fa-2x"></i> <!-- Changed icon to better represent starter service -->
+            </div>
+            <h3 class="h4 mb-3" data-i18n="starter_service_title">Servisim Starteri</h3>
+            <p class="text-muted mb-4" data-i18n="starter_service_desc">Diagnostikim, riparim dhe zëvendësim i sistemit të startimit për performancë optimale.</p>
+            <ul class="service-features list-unstyled">
+              <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="starter_feature1">Testim dhe diagnostikim</span></li>
+              <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="starter_feature2">Riparim i starterit</span></li>
+              <li><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="starter_feature3">Zëvendësim i brushave</span></li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Service Card 4 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card h-100 p-4 rounded-3 shadow-sm bg-white">
+            <div class="service-icon bg-danger bg-opacity-10 text-danger rounded-3 mb-4">
+              <i class="fas fa-tools fa-2x"></i>
+            </div>
+            <h3 class="h4 mb-3" data-i18n="periodic_maintenance_title">Mirëmbajtje Periodike</h3>
+            <p class="text-muted mb-4" data-i18n="periodic_maintenance_desc">Programe personalizuar sipas rekomandimeve të prodhuesit.</p>
+            <ul class="service-features list-unstyled">
+              <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="maintenance_feature1">Inspektime teknike</span></li>
+              <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="maintenance_feature2">Zëvendësime parandaluese</span></li>
+              <li><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="maintenance_feature3">Raportet e gjendjes</span></li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Service Card 5 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card h-100 p-4 rounded-3 shadow-sm bg-white">
+            <div class="service-icon bg-danger bg-opacity-10 text-danger rounded-3 mb-4">
+              <i class="fas fa-bolt fa-2x"></i>
+            </div>
+            <h3 class="h4 mb-3" data-i18n="alternator_service_title">Servisim Alternatori</h3>
+            <p class="text-muted mb-4" data-i18n="alternator_service_desc">Diagnostikim, riparim dhe mirëmbajtje e alternatorit për sistem elektrik optimal.</p>
+            <ul class="service-features list-unstyled">
+              <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="alternator_feature1">Matje e tensionit të daljes</span></li>
+              <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="alternator_feature2">Ndërrim i rrotullave dhe komponentëve të dëmtuar</span></li>
+              <li><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="alternator_feature3">Riparim ose zëvendësim i mbështjelljeve</span></li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Service Card 6 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card h-100 p-4 rounded-3 shadow-sm bg-white">
+            <div class="service-icon bg-danger bg-opacity-10 text-danger rounded-3 mb-4">
+              <i class="fas fa-car-battery fa-2x"></i>
+            </div>
+            <h3 class="h4 mb-3" data-i18n="battery_service_title">Bateri dhe Ngarkim</h3>
+            <p class="text-muted mb-4" data-i18n="battery_service_desc">Zgjidhje komplete për sistemin elektrik të automjetit.</p>
+            <ul class="service-features list-unstyled">
+              <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="battery_feature1">Testim gjendje baterie</span></li>
+              <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="battery_feature2">Zëvendësim profesional</span></li>
+              <li><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="battery_feature3">Sistemet e ngarkimit</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- CTA Section -->
+      <div class="row mt-5">
+        <div class="col-12 text-center">
+          <div class="cta-box bg-danger text-white p-4 rounded-3 shadow">
+            <h3 class="mb-3" data-i18n="cta_question">Keni nevojë për ndihmë me automjetin tuaj?</h3>
+            <p class="mb-4" data-i18n="cta_offer">Rezervoni një termin tani dhe përfitoni inspektim!</p>
+            <a href="#contact" class="btn btn-light btn-lg">
+              <i class="fas fa-calendar-check me-2"></i><span data-i18n="cta_button">Rezervo Tani</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      
     </div>
   </section>
 
-<!-- Services Section -->
-<section id="services" class="services-section py-5">
-  <div class="container">
-    <div class="text-center mb-5">
-      <span class="section-badge bg-danger text-white mb-3" data-i18n="our_services">SHËRBIMET TONA</span>
-      <h2 class="fw-bold display-5 mb-3" data-i18n="professional_solutions">Zgjidhje Profesionale për Automjetin Tuaj</h2>
-      <p class="lead text-muted mx-auto" style="max-width: 700px;" data-i18n="services_description">Ofrojmë shërbime të specializuara me teknologji të avancuar dhe pjesë këmbimi të cilësisë së lartë</p>
-      <div class="divider mx-auto bg-danger"></div>
-    </div>
-    
-    <div class="row g-4">
-      <!-- Service Card 1 -->
-      <div class="col-lg-4 col-md-6">
-        <div class="service-card h-100 p-4 rounded-3 shadow-sm bg-white">
-          <div class="service-icon bg-danger bg-opacity-10 text-danger rounded-3 mb-4">
-            <i class="fas fa-microchip fa-2x"></i>
-          </div>
-          <h3 class="h4 mb-3" data-i18n="electronic_repairs_title">Riparime Elektronike</h3>
-          <p class="text-muted mb-4" data-i18n="electronic_repairs_desc">Diagnostikim dhe riparime të sistemeve elektronike dhe elektrike të automjeteve me pajisje speciale.</p>
-          <ul class="service-features list-unstyled">
-            <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="electronic_feature1">Sistemet e kompjuterizimit</span></li>
-            <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="electronic_feature2">Senzorët dhe instrumentet</span></li>
-            <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="electronic_feature3">Ndërrimin dhe riparimin e instalimit</span></li>
-          </ul>
-        </div>
-      </div>
+  <!-- About Section -->
+  <section id="about" class="about-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Image Gallery Column -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="row g-3 gallery-grid">
+            <!-- Left Column -->
+            <div class="col-md-6">
+              <!-- First Left Gallery Item -->
+              <div class="gallery-item rounded-3 overflow-hidden shadow">
+                <img src="Images/photo-4.jpeg" alt="Punëtori jonë" class="img-fluid w-100" style="height: 280px; object-fit: cover;">
+                <div class="gallery-caption p-3">
+                  <p class="mb-0 small text-muted" data-i18n="gallery_caption1">Punëtoria jonë e pajisur me teknologji moderne</p>
+                </div>
+              </div>
       
-      <!-- Service Card 2 -->
-      <div class="col-lg-4 col-md-6">
-        <div class="service-card h-100 p-4 rounded-3 shadow-sm bg-white">
-          <div class="service-icon bg-danger bg-opacity-10 text-danger rounded-3 mb-4">
-            <i class="fas fa-bolt fa-2x"></i>
-          </div>
-          <h3 class="h4 mb-3" data-i18n="electrical_diagnostics_title">Diagnostikim Elektrik</h3>
-          <p class="text-muted mb-4" data-i18n="electrical_diagnostics_desc">Zbulim të saktë të problemeve elektronike me skanerë profesionale Bosch.</p>
-          <ul class="service-features list-unstyled">
-            <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="electrical_feature1">Diagnostikim kompjuterik</span></li>
-            <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="electrical_feature2">Sistemi i ndriçimit</span></li>
-            <li><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="electrical_feature3">Kontrollë sensorësh</span></li>
-          </ul>
-        </div>
-      </div>
-      
-      <!-- Service Card 3 -->
-      <div class="col-lg-4 col-md-6">
-        <div class="service-card h-100 p-4 rounded-3 shadow-sm bg-white">
-          <div class="service-icon bg-danger bg-opacity-10 text-danger rounded-3 mb-4">
-            <i class="fas fa-car-battery fa-2x"></i> <!-- Changed icon to better represent starter service -->
-          </div>
-          <h3 class="h4 mb-3" data-i18n="starter_service_title">Servisim Starteri</h3>
-          <p class="text-muted mb-4" data-i18n="starter_service_desc">Diagnostikim, riparim dhe zëvendësim i sistemit të startimit për performancë optimale.</p>
-          <ul class="service-features list-unstyled">
-            <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="starter_feature1">Testim dhe diagnostikim</span></li>
-            <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="starter_feature2">Riparim i starterit</span></li>
-            <li><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="starter_feature3">Zëvendësim i brushave</span></li>
-          </ul>
-        </div>
-      </div>
-      
-      <!-- Service Card 4 -->
-      <div class="col-lg-4 col-md-6">
-        <div class="service-card h-100 p-4 rounded-3 shadow-sm bg-white">
-          <div class="service-icon bg-danger bg-opacity-10 text-danger rounded-3 mb-4">
-            <i class="fas fa-tools fa-2x"></i>
-          </div>
-          <h3 class="h4 mb-3" data-i18n="periodic_maintenance_title">Mirëmbajtje Periodike</h3>
-          <p class="text-muted mb-4" data-i18n="periodic_maintenance_desc">Programe personalizuar sipas rekomandimeve të prodhuesit.</p>
-          <ul class="service-features list-unstyled">
-            <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="maintenance_feature1">Inspektime teknike</span></li>
-            <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="maintenance_feature2">Zëvendësime parandaluese</span></li>
-            <li><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="maintenance_feature3">Raportet e gjendjes</span></li>
-          </ul>
-        </div>
-      </div>
-      
-      <!-- Service Card 5 -->
-      <div class="col-lg-4 col-md-6">
-        <div class="service-card h-100 p-4 rounded-3 shadow-sm bg-white">
-          <div class="service-icon bg-danger bg-opacity-10 text-danger rounded-3 mb-4">
-            <i class="fas fa-bolt fa-2x"></i>
-          </div>
-          <h3 class="h4 mb-3" data-i18n="alternator_service_title">Servisim Alternatori</h3>
-          <p class="text-muted mb-4" data-i18n="alternator_service_desc">Diagnostikim, riparim dhe mirëmbajtje e alternatorit për sistem elektrik optimal.</p>
-          <ul class="service-features list-unstyled">
-            <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="alternator_feature1">Matje e tensionit të daljes</span></li>
-            <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="alternator_feature2">Ndërrim i rrotullave dhe komponentëve të dëmtuar</span></li>
-            <li><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="alternator_feature3">Riparim ose zëvendësim i mbështjelljeve</span></li>
-          </ul>
-        </div>
-      </div>
-      
-      <!-- Service Card 6 -->
-      <div class="col-lg-4 col-md-6">
-        <div class="service-card h-100 p-4 rounded-3 shadow-sm bg-white">
-          <div class="service-icon bg-danger bg-opacity-10 text-danger rounded-3 mb-4">
-            <i class="fas fa-car-battery fa-2x"></i>
-          </div>
-          <h3 class="h4 mb-3" data-i18n="battery_service_title">Bateri dhe Ngarkim</h3>
-          <p class="text-muted mb-4" data-i18n="battery_service_desc">Zgjidhje komplete për sistemin elektrik të automjetit.</p>
-          <ul class="service-features list-unstyled">
-            <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="battery_feature1">Testim gjendje baterie</span></li>
-            <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="battery_feature2">Zëvendësim profesional</span></li>
-            <li><i class="fas fa-check-circle text-danger me-2"></i><span data-i18n="battery_feature3">Sistemet e ngarkimit</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    
-    <!-- CTA Section -->
-    <div class="row mt-5">
-      <div class="col-12 text-center">
-        <div class="cta-box bg-danger text-white p-4 rounded-3 shadow">
-          <h3 class="mb-3" data-i18n="cta_question">Keni nevojë për ndihmë me automjetin tuaj?</h3>
-          <p class="mb-4" data-i18n="cta_offer">Rezervoni një termin tani dhe përfitoni inspektim!</p>
-          <a href="#contact" class="btn btn-light btn-lg">
-            <i class="fas fa-calendar-check me-2"></i><span data-i18n="cta_button">Rezervo Tani</span>
-          </a>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-</section>
+              <!-- Second Left Gallery Item -->
+              <div class="gallery-item rounded-3 overflow-hidden shadow mt-3">
+                <img src="Images/photo-6.jpeg" alt="Pjesë e punishtes" class="img-fluid w-100" style="height: 200px; object-fit: cover;">
+                <div class="gallery-caption p-3">
+                  <p class="mb-0 small text-muted" data-i18n="gallery_caption2">Këtu çdo detaj kontrollohet me kujdes</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Right Column -->
+            <div class="col-md-6">
+              <!-- First Right Gallery Item -->
+              <div class="gallery-item rounded-3 overflow-hidden shadow">
+                <img src="Images/photo-3.jpeg" alt="Ekipi ynë në punë" class="img-fluid w-100" style="height: 220px; object-fit: cover;">
+                <div class="gallery-caption p-3">
+                  <p class="mb-0 small text-muted" data-i18n="gallery_caption3">Punë e organizuar, rezultate të shpejta</p>
+                </div>
+              </div>
+              <!-- Second Right Gallery Item -->
+              <div class="gallery-item rounded-3 overflow-hidden shadow mt-3">
+                <img src="Images/photo-5.jpeg" alt="Pajisjet tona moderne" class="img-fluid w-100" style="height: 130px; object-fit: cover;">
+                <div class="gallery-caption p-3">
+                  <p class="mb-0 small text-muted" data-i18n="gallery_caption4">Ambient i pastër dhe i sigurt për çdo automjet</p>
+                </div>
+              </div>
+              <!-- Third Right Gallery Item -->
+              <div class="gallery-item rounded-3 overflow-hidden shadow mt-3">
+                <img src="Images/photo-2.jpeg" alt="Pajisjet tona moderne" class="img-fluid w-100" style="height: 130px; object-fit: cover;">
+                <div class="gallery-caption p-3">
+                  <p class="mb-0 small text-muted" data-i18n="gallery_caption5">Mikpritje me përkushtim, shërbim me respekt</p>
+                </div>
+              </div>
 
-<!-- About Section -->
-<section id="about" class="about-section py-5">
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- Image Gallery Column -->
-      <div class="col-lg-6 mb-4 mb-lg-0">
-        <div class="row g-3 gallery-grid">
-          <!-- Left Column -->
-          <div class="col-md-6">
-            <!-- First Left Gallery Item -->
-            <div class="gallery-item rounded-3 overflow-hidden shadow">
-              <img src="Images/photo-4.jpeg" alt="Punëtori jonë" class="img-fluid w-100" style="height: 280px; object-fit: cover;">
-              <div class="gallery-caption p-3">
-                <p class="mb-0 small text-muted" data-i18n="gallery_caption1">Punëtoria jonë e pajisur me teknologji moderne</p>
-              </div>
             </div>
-    
-            <!-- Second Left Gallery Item -->
-            <div class="gallery-item rounded-3 overflow-hidden shadow mt-3">
-              <img src="Images/photo-6.jpeg" alt="Pjesë e punishtes" class="img-fluid w-100" style="height: 200px; object-fit: cover;">
-              <div class="gallery-caption p-3">
-                <p class="mb-0 small text-muted" data-i18n="gallery_caption2">Këtu çdo detaj kontrollohet me kujdes</p>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Right Column -->
-          <div class="col-md-6">
-            <!-- First Right Gallery Item -->
-            <div class="gallery-item rounded-3 overflow-hidden shadow">
-              <img src="Images/photo-3.jpeg" alt="Ekipi ynë në punë" class="img-fluid w-100" style="height: 220px; object-fit: cover;">
-              <div class="gallery-caption p-3">
-                <p class="mb-0 small text-muted" data-i18n="gallery_caption3">Punë e organizuar, rezultate të shpejta</p>
-              </div>
-            </div>
-            <!-- Second Right Gallery Item -->
-            <div class="gallery-item rounded-3 overflow-hidden shadow mt-3">
-              <img src="Images/photo-5.jpeg" alt="Pajisjet tona moderne" class="img-fluid w-100" style="height: 130px; object-fit: cover;">
-              <div class="gallery-caption p-3">
-                <p class="mb-0 small text-muted" data-i18n="gallery_caption4">Ambient i pastër dhe i sigurt për çdo automjet</p>
-              </div>
-            </div>
-            <!-- Third Right Gallery Item -->
-            <div class="gallery-item rounded-3 overflow-hidden shadow mt-3">
-              <img src="Images/photo-2.jpeg" alt="Pajisjet tona moderne" class="img-fluid w-100" style="height: 130px; object-fit: cover;">
-              <div class="gallery-caption p-3">
-                <p class="mb-0 small text-muted" data-i18n="gallery_caption5">Mikpritje me përkushtim, shërbim me respekt</p>
-              </div>
-            </div>
-
           </div>
         </div>
-      </div>
-      
-      <!-- Content Column -->
-      <div class="col-lg-6 about-content ps-lg-5">
-        <span class="badge bg-danger mb-3" data-i18n="about_badge">RRETH NESH</span>
-        <h2 class="display-5 fw-bold mb-4" data-i18n="about_title">Bosch Junior - Ekspertë në Shërbimet Automobilistike</h2>
         
-        <div class="d-flex mb-4">
-          <div class="flex-shrink-0 text-danger me-3">
-            <i class="fas fa-check-circle fa-2x"></i>
-          </div>
-          <div>
-            <p class="lead mb-0" data-i18n="about_highlight">Biznes familjar me traditë 20-vjeçare në shërbimet për automjete</p>
-          </div>
-        </div>
-
-        <p class="text-muted mb-4" data-i18n="about_description">Me një histori të pasur dhe pasion për automjetet, ne ofrojmë shërbime të cilësisë së lartë me përdorimin e teknologjisë më të fundit dhe pjesëve origjinale.</p>
-
-        <div class="feature-list mb-4">
-          <div class="d-flex mb-3">
-            <div class="flex-shrink-0 text-danger me-3">
-              <i class="fas fa-wrench"></i>
-            </div>
-            <div>
-              <h5 class="mb-1" data-i18n="feature1_title">Teknikë të Certifikuar</h5>
-              <p class="text-muted small mb-0" data-i18n="feature1_desc">Ekipi ynë përmban specialistë të trajnuar nga Bosch</p>
-            </div>
-          </div>
+        <!-- Content Column -->
+        <div class="col-lg-6 about-content ps-lg-5">
+          <span class="badge bg-danger mb-3" data-i18n="about_badge">RRETH NESH</span>
+          <h2 class="display-5 fw-bold mb-4" data-i18n="about_title">Bosch Junior - Ekspertë në Shërbimet Automobilistike</h2>
           
-          <div class="d-flex mb-3">
+          <div class="d-flex mb-4">
             <div class="flex-shrink-0 text-danger me-3">
-              <i class="fas fa-cogs"></i>
+              <i class="fas fa-check-circle fa-2x"></i>
             </div>
             <div>
-              <h5 class="mb-1" data-i18n="feature2_title">Pajisje Moderne</h5>
-              <p class="text-muted small mb-0" data-i18n="feature2_desc">Teknologji e avancuar për diagnostikim të saktë</p>
+              <p class="lead mb-0" data-i18n="about_highlight">Biznes familjar me traditë 20-vjeçare në shërbimet për automjete</p>
             </div>
           </div>
-          
-          <div class="d-flex">
-            <div class="flex-shrink-0 text-danger me-3">
-              <i class="fas fa-shield-alt"></i>
-            </div>
-            <div>
-              <h5 class="mb-1" data-i18n="feature3_title">Garancion Cilësie</h5>
-              <p class="text-muted small mb-0" data-i18n="feature3_desc">Garantojmë çdo shërbim që ofrojmë</p>
-            </div>
-          </div>
-        </div>
 
-        <!-- Stats -->
-        <div class="stats-container bg-light p-4 rounded-3">
-          <div class="row text-center">
-            <div class="col-4">
-              <h3 class="text-danger mb-0 fw-bold">20+</h3>
-              <p class="small mb-0" data-i18n="stat1">Vjet Përvojë</p>
+          <p class="text-muted mb-4" data-i18n="about_description">Me një histori të pasur dhe pasion për automjetet, ne ofrojmë shërbime të cilësisë së lartë me përdorimin e teknologjisë më të fundit dhe pjesëve origjinale.</p>
+
+          <div class="feature-list mb-4">
+            <div class="d-flex mb-3">
+              <div class="flex-shrink-0 text-danger me-3">
+                <i class="fas fa-wrench"></i>
+              </div>
+              <div>
+                <h5 class="mb-1" data-i18n="feature1_title">Teknikë të Certifikuar</h5>
+                <p class="text-muted small mb-0" data-i18n="feature1_desc">Ekipi ynë përmban specialistë të trajnuar nga Bosch</p>
+              </div>
             </div>
-            <div class="col-4">
-              <h3 class="text-danger mb-0 fw-bold">1000+</h3>
-              <p class="small mb-0" data-i18n="stat2">Klientë të Kënaqur</p>
+            
+            <div class="d-flex mb-3">
+              <div class="flex-shrink-0 text-danger me-3">
+                <i class="fas fa-cogs"></i>
+              </div>
+              <div>
+                <h5 class="mb-1" data-i18n="feature2_title">Pajisje Moderne</h5>
+                <p class="text-muted small mb-0" data-i18n="feature2_desc">Teknologji e avancuar për diagnostikim të saktë</p>
+              </div>
             </div>
-            <div class="col-4">
-              <h3 class="text-danger mb-0 fw-bold">24/7</h3>
-              <p class="small mb-0" data-i18n="stat3">Ndihmë Në Rrugë</p>
+            
+            <div class="d-flex">
+              <div class="flex-shrink-0 text-danger me-3">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <div>
+                <h5 class="mb-1" data-i18n="feature3_title">Garancion Cilësie</h5>
+                <p class="text-muted small mb-0" data-i18n="feature3_desc">Garantojmë çdo shërbim që ofrojmë</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="mt-4">
-          <a href="gallery.html" class="btn btn-danger me-2">
-            <i class="fas fa-images me-2"></i><span data-i18n="gallery_button">Shiko Galerinë</span>
-          </a>
-          <a href="#contact" class="btn btn-outline-danger">
-            <i class="fas fa-phone me-2"></i><span data-i18n="contact_button">Na Kontaktoni</span>
-          </a>
+          <!-- Stats -->
+          <div class="stats-container bg-light p-4 rounded-3">
+            <div class="row text-center">
+              <div class="col-4">
+                <h3 class="text-danger mb-0 fw-bold">20+</h3>
+                <p class="small mb-0" data-i18n="stat1">Vjet Përvojë</p>
+              </div>
+              <div class="col-4">
+                <h3 class="text-danger mb-0 fw-bold">1000+</h3>
+                <p class="small mb-0" data-i18n="stat2">Klientë të Kënaqur</p>
+              </div>
+              <div class="col-4">
+                <h3 class="text-danger mb-0 fw-bold">24/7</h3>
+                <p class="small mb-0" data-i18n="stat3">Ndihmë Në Rrugë</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <a href="gallery.html" class="btn btn-danger me-2">
+              <i class="fas fa-images me-2"></i><span data-i18n="gallery_button">Shiko Galerinë</span>
+            </a>
+            <a href="#contact" class="btn btn-outline-danger">
+              <i class="fas fa-phone me-2"></i><span data-i18n="contact_button">Na Kontaktoni</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Contact Section -->
-<section id="contact" class="contact-section py-5">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="fw-bold display-5 mb-3" data-i18n="contact_title">Na Gjeni</h2>
-      <p class="lead text-muted" data-i18n="contact_subtitle">Vizitoni punëtorinë tonë ose na kontaktoni direkt</p>
-      <div class="divider mx-auto bg-danger"></div>
-    </div>
-    
-    <div class="row g-4 justify-content-center">
-      <!-- Contact Card 1: Location -->
-      <div class="col-lg-4 col-md-6">
-        <div class="contact-card h-100 text-center p-4 rounded-3 shadow-sm bg-white">
-          <div class="icon-wrapper bg-danger bg-opacity-10 text-danger rounded-circle mx-auto mb-4">
-            <i class="fas fa-map-marker-alt fa-2x"></i>
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold display-5 mb-3" data-i18n="contact_title">Na Gjeni</h2>
+        <p class="lead text-muted" data-i18n="contact_subtitle">Vizitoni punëtorinë tonë ose na kontaktoni direkt</p>
+        <div class="divider mx-auto bg-danger"></div>
+      </div>
+      
+      <div class="row g-4 justify-content-center">
+        <!-- Contact Card 1: Location -->
+        <div class="col-lg-4 col-md-6">
+          <div class="contact-card h-100 text-center p-4 rounded-3 shadow-sm bg-white">
+            <div class="icon-wrapper bg-danger bg-opacity-10 text-danger rounded-circle mx-auto mb-4">
+              <i class="fas fa-map-marker-alt fa-2x"></i>
+            </div>
+            <h4 class="mb-3" data-i18n="location_title">Lokacioni</h4>
+            <p class="mb-4" data-i18n="address">Metodija Andonov Chento 105B, Shkup</p>
+            <a href="#location" class="btn btn-outline-danger">
+              <i class="fas fa-directions me-2"></i><span data-i18n="view_map">Shiko në Hartë</span>
+            </a>
           </div>
-          <h4 class="mb-3" data-i18n="location_title">Lokacioni</h4>
-          <p class="mb-4" data-i18n="address">Metodija Andonov Chento 105B, Shkup</p>
-          <a href="#location" class="btn btn-outline-danger">
-            <i class="fas fa-directions me-2"></i><span data-i18n="view_map">Shiko në Hartë</span>
-          </a>
+        </div>
+        
+        <!-- Contact Card 2: Phone -->
+        <div class="col-lg-4 col-md-6">
+          <div class="contact-card h-100 text-center p-4 rounded-3 shadow-sm bg-white">
+            <div class="icon-wrapper bg-danger bg-opacity-10 text-danger rounded-circle mx-auto mb-4">
+              <i class="fas fa-phone-alt fa-2x"></i>
+            </div>
+            <h4 class="mb-3" data-i18n="phone_title">Telefoni</h4>
+            <p class="mb-2">
+              <a href="tel:071337313" class="text-decoration-none text-dark" id="tel-num">071 337 313</a>
+            </p>
+            <p class="mb-4">
+              <a href="tel:070539702" class="text-decoration-none text-dark" id="tel-num">070 539 702</a>
+            </p>
+            <a href="tel:070539702" class="btn btn-outline-danger">
+              <i class="fas fa-phone me-2"></i><span data-i18n="call_now">Thirr Tani</span>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Contact Card 3: Hours -->
+        <div class="col-lg-4 col-md-6">
+          <div class="contact-card h-100 text-center p-4 rounded-3 shadow-sm bg-white">
+            <div class="icon-wrapper bg-danger bg-opacity-10 text-danger rounded-circle mx-auto mb-4">
+              <i class="fas fa-clock fa-2x"></i>
+            </div>
+            <h4 class="mb-3" data-i18n="hours_title">Orari i Punës</h4>
+            <ul class="list-unstyled mb-4">
+              <li class="mb-2"><strong data-i18n="weekdays">E Hënë - E Premte:</strong> 09:00 - 18:00</li>
+              <li class="mb-2"><strong data-i18n="saturday">E Shtunë:</strong> 10:00 - 15:00</li>
+              <li><strong data-i18n="sunday">E Dielë:</strong> <span data-i18n="closed">Mbyllur</span></li>
+            </ul>
+            <div class="badge bg-danger bg-opacity-10 text-danger p-2">
+              <i class="fas fa-info-circle me-1"></i> <span data-i18n="contact_us">Na Kontaktoni</span>
+            </div>
+          </div>
         </div>
       </div>
       
-      <!-- Contact Card 2: Phone -->
-      <div class="col-lg-4 col-md-6">
-        <div class="contact-card h-100 text-center p-4 rounded-3 shadow-sm bg-white">
-          <div class="icon-wrapper bg-danger bg-opacity-10 text-danger rounded-circle mx-auto mb-4">
-            <i class="fas fa-phone-alt fa-2x"></i>
-          </div>
-          <h4 class="mb-3" data-i18n="phone_title">Telefoni</h4>
-          <p class="mb-2">
-            <a href="tel:071337313" class="text-decoration-none text-dark" id="tel-num">071 337 313</a>
-          </p>
-          <p class="mb-4">
-            <a href="tel:070539702" class="text-decoration-none text-dark" id="tel-num">070 539 702</a>
-          </p>
-          <a href="tel:070539702" class="btn btn-outline-danger">
-            <i class="fas fa-phone me-2"></i><span data-i18n="call_now">Thirr Tani</span>
-          </a>
-        </div>
-      </div>
-      
-      <!-- Contact Card 3: Hours -->
-      <div class="col-lg-4 col-md-6">
-        <div class="contact-card h-100 text-center p-4 rounded-3 shadow-sm bg-white">
-          <div class="icon-wrapper bg-danger bg-opacity-10 text-danger rounded-circle mx-auto mb-4">
-            <i class="fas fa-clock fa-2x"></i>
-          </div>
-          <h4 class="mb-3" data-i18n="hours_title">Orari i Punës</h4>
-          <ul class="list-unstyled mb-4">
-            <li class="mb-2"><strong data-i18n="weekdays">E Hënë - E Premte:</strong> 09:00 - 18:00</li>
-            <li class="mb-2"><strong data-i18n="saturday">E Shtunë:</strong> 10:00 - 15:00</li>
-            <li><strong data-i18n="sunday">E Dielë:</strong> <span data-i18n="closed">Mbyllur</span></li>
-          </ul>
-          <div class="badge bg-danger bg-opacity-10 text-danger p-2">
-            <i class="fas fa-info-circle me-1"></i> <span data-i18n="contact_us">Na Kontaktoni</span>
+      <!-- Social Media Section -->
+      <div class="row mt-5">
+        <div class="col-12 text-center">
+          <h4 class="mb-4" data-i18n="follow_us">Na Ndiqni në Rrjetet Sociale</h4>
+          <div class="social-links">
+            <a href="https://m.facebook.com/autoelectric.bosch/" target="_blank" class="text-danger mx-3"><i class="fab fa-facebook-f fa-2x"></i></a>
+            <a href="https://www.instagram.com/boschjunior1/?hl=en" target="_blank" class="text-danger mx-3"><i class="fab fa-instagram fa-2x"></i></a>
           </div>
         </div>
       </div>
     </div>
-    
-    <!-- Social Media Section -->
-    <div class="row mt-5">
-      <div class="col-12 text-center">
-        <h4 class="mb-4" data-i18n="follow_us">Na Ndiqni në Rrjetet Sociale</h4>
-        <div class="social-links">
-          <a href="https://m.facebook.com/autoelectric.bosch/" target="_blank" class="text-danger mx-3"><i class="fab fa-facebook-f fa-2x"></i></a>
-          <a href="https://www.instagram.com/boschjunior1/?hl=en" target="_blank" class="text-danger mx-3"><i class="fab fa-instagram fa-2x"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
   <!-- Map Section -->
   <section class="p-0" id="location">
-    <div class="container-fluid">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d935.1439077593895!2d21.505343335704037!3d42.00742695119257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13543f53435637bf%3A0xc0aea21214d0c604!2sBosch%20Junior!5e1!3m2!1sen!2smk!4v1630174542836!5m2!1sen!2smk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
+      <div class="container-fluid">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d935.1439077593895!2d21.505343335704037!3d42.00742695119257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13543f53435637bf%3A0xc0aea21214d0c604!2sBosch%20Junior!5e1!3m2!1sen!2smk!4v1630174542836!5m2!1sen!2smk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
   </section>
 
-<!-- Footer -->
-<footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 text-center text-lg-start">
-        <img src="Images/bosch-logo.png" alt="Bosch Junior" class="footer-logo">
-        <p data-i18n="footer_description">Shërbime profesionale për riparimin dhe mirëmbajtjen e automjeteve në Shkup.</p>
-      </div>
-      <div class="col-lg-4 text-center">
-        <h5 class="mb-4" data-i18n="connect_with_us">Lidhuni me ne</h5>
-        <div class="social-icons">
-          <a href="https://www.instagram.com/boschjunior1/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://m.facebook.com/autoelectric.bosch/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 text-center text-lg-start">
+          <img src="Images/bosch-logo.png" alt="Bosch Junior" class="footer-logo">
+          <p data-i18n="footer_description">Shërbime profesionale për riparimin dhe mirëmbajtjen e automjeteve në Shkup.</p>
+        </div>
+        <div class="col-lg-4 text-center">
+          <h5 class="mb-4" data-i18n="connect_with_us">Lidhuni me ne</h5>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/boschjunior1/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://m.facebook.com/autoelectric.bosch/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center text-lg-end">
+          <h5 class="mb-4" data-i18n="our_services">Shërbimet Tona</h5>
+          <ul class="list-unstyled">
+            <li><a href="#services" class="text-decoration-none" style="color: var(--footer-text);" data-i18n="service1">Riparime Elektronike</a></li>
+            <li><a href="#services" class="text-decoration-none" style="color: var(--footer-text);" data-i18n="service2">Diagnostikim Elektrik</a></li>
+            <li><a href="#services" class="text-decoration-none" style="color: var(--footer-text);" data-i18n="service3">Servisim Starteri</a></li>
+            <li><a href="#services" class="text-decoration-none" style="color: var(--footer-text);" data-i18n="service4">Mirëmbajtje Periodike</a></li>
+            <li><a href="#services" class="text-decoration-none" style="color: var(--footer-text);" data-i18n="service5">Servisim Alternatori</a></li>
+            <li><a href="#services" class="text-decoration-none" style="color: var(--footer-text);" data-i18n="service6">Bateri dhe Ngarkim</a></li>
+          </ul>
         </div>
       </div>
-      <div class="col-lg-4 text-center text-lg-end">
-        <h5 class="mb-4" data-i18n="our_services">Shërbimet Tona</h5>
-        <ul class="list-unstyled">
-          <li><a href="#services" class="text-decoration-none" style="color: var(--footer-text);" data-i18n="service1">Riparime Elektronike</a></li>
-          <li><a href="#services" class="text-decoration-none" style="color: var(--footer-text);" data-i18n="service2">Diagnostikim Elektrik</a></li>
-          <li><a href="#services" class="text-decoration-none" style="color: var(--footer-text);" data-i18n="service3">Servisim Starteri</a></li>
-          <li><a href="#services" class="text-decoration-none" style="color: var(--footer-text);" data-i18n="service4">Mirëmbajtje Periodike</a></li>
-          <li><a href="#services" class="text-decoration-none" style="color: var(--footer-text);" data-i18n="service5">Servisim Alternatori</a></li>
-          <li><a href="#services" class="text-decoration-none" style="color: var(--footer-text);" data-i18n="service6">Bateri dhe Ngarkim</a></li>
-        </ul>
+      <div class="text-center copyright">
+        <p data-i18n="copyright">© 2025 Bosch Junior. Të gjitha të drejtat e rezervuara.</p>
       </div>
     </div>
-    <div class="text-center copyright">
-      <p data-i18n="copyright">© 2025 Bosch Junior. Të gjitha të drejtat e rezervuara.</p>
-    </div>
-  </div>
-</footer>
+  </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
