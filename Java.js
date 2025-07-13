@@ -240,7 +240,15 @@ function loadTranslations(lang) {
       "service4": "Mirëmbajtje Periodike",
       "service5": "Servisim Alternatori",
       "service6": "Bateri dhe Ngarkim",
-      "copyright": "© 2025 Bosch Junior. Të gjitha të drejtat e rezervuara."
+      "copyright": "© 2025 Bosch Junior. Të gjitha të drejtat e rezervuara.",
+
+      // Gallery.html
+      // Navbar
+      "gallery": "Galeria jonë",
+      // Gallery Section
+      "back": "Kthehu tek Kryefaqja",
+      "gallery_title": "Galeria Jonë",
+      "gallery_desc": "Shikoni punën tonë dhe ambientet tona të punës përmes këtyre fotove"
     },
     mk: {
       // Navbar
@@ -352,7 +360,15 @@ function loadTranslations(lang) {
       "service4": "Периодично одржување",
       "service5": "Сервисирање на алтернатор",
       "service6": "Батерии и полнење",
-      "copyright": "© 2025 Bosch Junior. Сите права се задржани."
+      "copyright": "© 2025 Bosch Junior. Сите права се задржани.",
+
+      // Gallery.html
+      // Navbar
+      "gallery": "Галерија",
+      // Gallery Section
+      "back": "Врати се на Почетна",
+      "gallery_title": "Наша Галерија",
+      "gallery_desc": "Погледнете ја нашата работа и работната средина преку овие фотографии"
     }
   };
   
@@ -385,3 +401,38 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+// Photo slider to gallery.html
+document.addEventListener('DOMContentLoaded', function() {
+  // For seamless infinite loop
+  const track = document.querySelector('.slider-track');
+  const slides = document.querySelectorAll('.slide');
+  const slideWidth = slides[0].offsetWidth;
+  const gap = 15;
+  const totalWidth = (slideWidth + gap) * slides.length;
+  
+  // Clone slides for infinite effect
+  track.innerHTML += track.innerHTML;
+  
+  // Reset position when animation completes
+  track.addEventListener('animationiteration', () => {
+    track.style.transform = 'translateX(0)';
+  });
+  
+  // Optional: Touch/swipe support for mobile
+  let startX, moveX;
+  track.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+    track.style.animationPlayState = 'paused';
+  });
+  
+  track.addEventListener('touchmove', (e) => {
+    moveX = e.touches[0].clientX;
+    track.style.transform = `translateX(${moveX - startX}px)`;
+  });
+  
+  track.addEventListener('touchend', () => {
+    track.style.animationPlayState = 'running';
+  });
+});

@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeri - Bosch Junior</title>
+    <!-- favicon formats for better browser support -->
+    <link rel="shortcut icon" href="Images/bosch-logo.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="Images/bosch-logo.png">
+    <!-- AOS Library(for animations) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Link to Css -->
+    <link rel="stylesheet" href="Css.css">
+
     <style>
-        body {
-            padding-top: 56px;
-        }
         .gallery-section {
             padding: 80px 0;
             background-color: #f8f9fa;
@@ -54,42 +59,156 @@
         .back-button {
             margin-bottom: 30px;
         }
+          
+.auto-slider-section {
+    background-color: #f8f9fa;
+    overflow: hidden;
+    padding: 30px 0; /* Increased vertical padding */
+}
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1400px; /* Added max-width for larger screens */
+}
+
+.slider-track {
+    display: flex;
+    gap: 20px; /* Increased gap between images */
+    width: max-content;
+    animation: slide 25s linear infinite; /* Slightly slower animation */
+}
+
+.slide {
+    width: 240px; /* Increased from 200px */
+    flex: 0 0 auto;
+}
+
+.slider-img {
+    width: 100%;
+    height: 150px; /* Increased from 120px */
+    object-fit: cover;
+    border-radius: 8px; /* Slightly more rounded */
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15); /* Slightly stronger shadow */
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05); /* Subtle border */
+}
+
+.slider-img:hover {
+    transform: scale(1.08); /* Slightly more pronounced hover effect */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-240px * 6 - 20px * 6)); /* Adjusted for new sizes */
+    }
+}
+
+/* Pause animation on hover */
+.slider-track:hover {
+    animation-play-state: paused;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .slide {
+        width: 200px;
+    }
+    .slider-img {
+        height: 130px;
+    }
+    @keyframes slide {
+        100% {
+            transform: translateX(calc(-200px * 6 - 20px * 6));
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .slide {
+        width: 180px;
+    }
+    .slider-img {
+        height: 110px;
+    }
+    @keyframes slide {
+        100% {
+            transform: translateX(calc(-180px * 6 - 15px * 6));
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .slide {
+        width: 150px;
+    }
+    .slider-img {
+        height: 90px;
+    }
+    @keyframes slide {
+        100% {
+            transform: translateX(calc(-150px * 6 - 15px * 6));
+        }
+    }
+}
     </style>
 </head>
 <body>
-    <!-- Navigation (reuse your existing navigation) -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-                <img src="Images/bosch-logo.png" alt="Bosch Junior" width="150">
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Kryefaqja</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="gallery.html">Galeri</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Shërbimet</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Kontakt</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Gallery Section -->
-    <section class="gallery-section">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top" data-aos="slide-down">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="Images/bosch-logo.png" alt="Bosch Junior" width="200" class="nav-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="gallery.html" data-i18n="gallery">Galeria jonë</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" data-i18n="home">Kryefaqja</a>
+            </li>
+            <li class="nav-item">
+              <!-- Language -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-language"></i> Language
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                  <li><a class="dropdown-item active" href="#" data-lang="sq">Shqip</a></li>
+                  <li><a class="dropdown-item" href="#" data-lang="mk">Македонски</a></li>
+                </ul>
+              </li>
+              <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+    
+
+  <!-- Gallery Section -->
+  <section class="gallery-section">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <a href="index.html#about" class="btn btn-outline-danger back-button">
-                        <i class="fas fa-arrow-left me-2"></i>Kthehu tek Rreth Nesh
+                        <i class="fas fa-arrow-left me-2"></i><span data-i18n="back"></span>
                     </a>
-                    <h2 class="text-center section-title">Galeria Jonë</h2>
-                    <p class="text-center lead mb-5">Shikoni punën tonë dhe ambientet tona të punës përmes këtyre fotove</p>
+                    <h2 class="text-center section-title" data-i18n="gallery_title">Galeria Jonë</h2>
+                    <p class="text-center lead mb-5" data-i18n="gallery_desc">Shikoni punën tonë dhe ambientet tona të punës përmes këtyre fotove</p>
                 </div>
             </div>
 
@@ -157,50 +276,91 @@
                 </div>
             </div>
         </div>
-    </section>
+  </section>
 
-    <!-- Footer (reuse your existing footer) -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <img src="Images/bosch-logo.png" alt="Bosch Junior" width="150">
-                    <p>Shërbime profesionale për automjetet me më shumë se 15 vjet përvojë pune.</p>
-                </div>
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <h5>Linqet e Shpejta</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-white">Kryefaqja</a></li>
-                        <li><a href="gallery.html" class="text-white">Galeri</a></li>
-                        <li><a href="index.html#services" class="text-white">Shërbimet</a></li>
-                        <li><a href="index.html#contact" class="text-white">Kontakt</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5>Kontakt</h5>
-                    <ul class="list-unstyled">
-                        <li><i class="fas fa-map-marker-alt me-2"></i> Metodija Andonov Chento, Shkup</li>
-                        <li><i class="fas fa-phone me-2"></i>071 337 313</li>
-                        <li><i class="fas fa-phone me-2"></i>070 539 702</li>
-                        <li><i class="fas fa-envelope me-2"></i> info@boschjunior.com</li>
-                    </ul>
-                </div>
+  <!-- Automatic Image Slider -->
+  <section class="auto-slider-section py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 position-relative">
+        <div class="slider-container">
+          <div class="slider-track">
+            <!-- Duplicate first few images for seamless looping -->
+            <div class="slide">
+              <img src="Images/slide-photo-1.jpeg" alt="Workshop" class="slider-img">
             </div>
-            <hr class="my-4 bg-secondary">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-0">&copy; 2025 Bosch Junior. Të gjitha të drejtat e rezervuara.</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+            <div class="slide">
+              <img src="Images/slide-photo-2.jpeg" alt="Team Working" class="slider-img">
             </div>
+            <div class="slide">
+              <img src="Images/slide-photo-3.jpeg" alt="Equipment" class="slider-img">
+            </div>
+            <div class="slide">
+              <img src="Images/slide-photo-4.jpeg" alt="Car Service" class="slider-img">
+            </div>
+            <div class="slide">
+              <img src="Images/slide-photo-5.jpeg" alt="Customer Service" class="slider-img">
+            </div>
+            <div class="slide">
+              <img src="Images/slide-photo-6.png" alt="Team Photo" class="slider-img">
+            </div>
+            <div class="slide">
+              <img src="Images/photo-4.jpeg" alt="Team Photo" class="slider-img">
+            </div>
+            <!-- Original images repeated for seamless loop -->
+            <div class="slide">
+              <img src="Images/slide-photo-7.png" alt="Workshop" class="slider-img">
+            </div>
+            <div class="slide">
+              <img src="Images/slide-photo-8.png" alt="Team Working" class="slider-img">
+            </div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" data-aos="slide-up">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 text-center text-lg-start">
+          <img src="Images/bosch-logo.png" alt="Bosch Junior" class="footer-logo">
+          <p data-i18n="footer_description">Shërbime profesionale për riparimin dhe mirëmbajtjen e automjeteve në Shkup.</p>
+        </div>
+        <div class="col-lg-4 text-center">
+          <h5 class="mb-4" data-i18n="connect_with_us">Lidhuni me ne</h5>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/boschjunior1/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://m.facebook.com/autoelectric.bosch/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center text-lg-end">
+          <h5 class="mb-4" data-i18n="our_services">Shërbimet Tona</h5>
+          <ul class="list-unstyled">
+            <li><a href="#services" class="text-decoration-none" style="color: var(--footer-text);" data-i18n="service1">Riparime Elektronike</a></li>
+            <li><a href="#services" class="text-decoration-none" style="color: var(--footer-text);" data-i18n="service2">Diagnostikim Elektrik</a></li>
+            <li><a href="#services" class="text-decoration-none" style="color: var(--footer-text);" data-i18n="service3">Servisim Starteri</a></li>
+            <li><a href="#services" class="text-decoration-none" style="color: var(--footer-text);" data-i18n="service4">Mirëmbajtje Periodike</a></li>
+            <li><a href="#services" class="text-decoration-none" style="color: var(--footer-text);" data-i18n="service5">Servisim Alternatori</a></li>
+            <li><a href="#services" class="text-decoration-none" style="color: var(--footer-text);" data-i18n="service6">Bateri dhe Ngarkim</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center copyright">
+        <p data-i18n="copyright">© 2025 Bosch Junior. Të gjitha të drejtat e rezervuara.</p>
+      </div>
+    </div>
+  </footer>
+
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Link to JavaScript -->
+    <script src="Java.js"></script>
 </body>
 </html>
