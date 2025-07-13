@@ -248,7 +248,30 @@ function loadTranslations(lang) {
       // Gallery Section
       "back": "Kthehu tek Kryefaqja",
       "gallery_title": "Galeria Jonë",
-      "gallery_desc": "Shikoni punën tonë dhe ambientet tona të punës përmes këtyre fotove"
+      "gallery_desc": "Shikoni punën tonë dhe ambientet tona të punës përmes këtyre fotove",
+      // Gallery Items
+      "gallery1_title": "Kujdes ndaj Klientit",
+      "gallery1_desc": "Përkushtim maksimal për t'u siguruar që çdo klient të largohet i kënaqur dhe i sigurt",
+      "gallery2_title": "Teknikë të Certifikuar",
+      "gallery2_desc": "Ekip i trajnuar dhe i certifikuar sipas standardeve më të larta të industrisë automobilistike",
+      "gallery3_title": "Pajisjet Moderne",
+      "gallery3_desc": "Teknologjia më e fundit për diagnostikim",
+      "gallery4_title": "Servisim Cilësor",
+      "gallery4_desc": "Vëmendje ndaj detajeve në çdo punë",
+      "gallery5_title": "Shërbime të Qëndrueshme",
+      "gallery5_desc": "Zbatojmë praktika miqësore me mjedisin për mirëmbajtje dhe riparime të përgjegjshme",
+      "gallery6_title": "Cilësi e Garantuar",
+      "gallery6_desc": "Çdo shërbim kontrollohet me kujdes për të siguruar rezultate të qëndrueshme dhe të sigurta",
+      // Button
+      "contact_us": "Na Kontaktoni",
+      // Why Choose Us Section
+      "why_choose_us_title": "Pse të Zgjidhni Bosch Junior?",
+      "feature1_title": "Teknologji Moderne",
+      "feature1_desc": "Pajisje diagnostike dhe mjete të avancuara për shërbim të saktë",
+      "feature2_title": "Staf Profesionist",
+      "feature2_desc": "Mekanikë të trajnuar dhe të certifikuar për çdo lloj riparimi",
+      "feature3_title": "Besueshmëri & Garanci",
+      "feature3_desc": "Punë e garantuar dhe korrektësi maksimale në çdo shërbim"
     },
     mk: {
       // Navbar
@@ -362,13 +385,37 @@ function loadTranslations(lang) {
       "service6": "Батерии и полнење",
       "copyright": "© 2025 Bosch Junior. Сите права се задржани.",
 
+
       // Gallery.html
       // Navbar
       "gallery": "Галерија",
       // Gallery Section
       "back": "Врати се на Почетна",
       "gallery_title": "Наша Галерија",
-      "gallery_desc": "Погледнете ја нашата работа и работната средина преку овие фотографии"
+      "gallery_desc": "Погледнете ја нашата работа и работната средина преку овие фотографии",
+      // Gallery Items
+      "gallery1_title": "Грижа за клиентите",
+      "gallery1_desc": "Максимална посветеност за да осигураме дека секој клиент заминува задоволен и безбеден",
+      "gallery2_title": "Сертифицирани техничари",
+      "gallery2_desc": "Обучен и сертифициран тим според највисоките стандарди во автомобилската индустрија",
+      "gallery3_title": "Модерна опрема",
+      "gallery3_desc": "Најнова технологија за дијагностика",
+      "gallery4_title": "Квалитетен сервис",
+      "gallery4_desc": "Внимание на детали во секоја работа",
+      "gallery5_title": "Одржливи услуги",
+      "gallery5_desc": "Ги применуваме еколошки пријателски практики за одржливо одржување и поправки",
+      "gallery6_title": "Гарантиран квалитет",
+      "gallery6_desc": "Секоја услуга е внимателно проверена за да се обезбедат сигурни и трајни резултати",
+      // Button
+      "contact_us": "Контактирајте не",
+      // Why Choose Us Section
+      "why_choose_us_title": "Зошто да изберете Bosch Junior?",
+      "feature1_title": "Модерна технологија",
+      "feature1_desc": "Дијагностичка опрема и напредни алатки за прецизни сервиси",
+      "feature2_title": "Професионален тим",
+      "feature2_desc": "Обучени и сертифицирани механичари за секој вид поправка",
+      "feature3_title": "Сигурност и гаранција",
+      "feature3_desc": "Гарантирана работа и максимална точност во секоја услуга"
     }
   };
   
