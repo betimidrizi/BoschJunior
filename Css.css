@@ -556,3 +556,41 @@ html {
         }
     }
 }
+
+/* ========== Dark Theme Gallery.html ========== */
+body[data-theme="dark"] .gallery-section,
+body[data-theme="dark"] .auto-slider-section {
+  background-color: #121212;
+}
+body[data-theme="dark"] .gallery-img {
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.05);
+}
+body[data-theme="dark"] .gallery-img:hover {
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+}
+body[data-theme="dark"] .p-3.bg-white {
+  background-color: #1e1e1e !important;
+  color: #ddd;
+}
+body[data-theme="dark"] .section-title:after {
+  background: #dc3545; /* Keep your accent color */
+}
+body[data-theme="dark"] .slider-img {
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+body[data-theme="dark"] .slider-img:hover {
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+body[data-theme="dark"] .back-button {
+  color: #ddd;
+}
+body[data-theme="dark"] .bg-light {
+  background-color: #121212 !important;
+}
+body[data-theme="dark"] .bg-white {
+  background-color: #1e1e1e !important;
+}
+body[data-theme="dark"] .text-muted {
+  color: #ccc !important;
+}

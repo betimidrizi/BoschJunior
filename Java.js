@@ -255,9 +255,9 @@ function loadTranslations(lang) {
       "gallery2_title": "Teknikë të Certifikuar",
       "gallery2_desc": "Ekip i trajnuar dhe i certifikuar sipas standardeve më të larta të industrisë automobilistike",
       "gallery3_title": "Pajisjet Moderne",
-      "gallery3_desc": "Teknologjia më e fundit për diagnostikim",
+      "gallery3_desc": "Pajisje të avancuara për diagnostikim të detajuar dhe riparime të sigurta",
       "gallery4_title": "Servisim Cilësor",
-      "gallery4_desc": "Vëmendje ndaj detajeve në çdo punë",
+      "gallery4_desc": "Vëmendje maksimale ndaj detajeve dhe standarde të larta në çdo shërbim.",
       "gallery5_title": "Shërbime të Qëndrueshme",
       "gallery5_desc": "Zbatojmë praktika miqësore me mjedisin për mirëmbajtje dhe riparime të përgjegjshme",
       "gallery6_title": "Cilësi e Garantuar",
@@ -339,7 +339,6 @@ function loadTranslations(lang) {
       // Content column
       "about_badge": "ЗА НАС",
       "about_title": "Bosch Junior - Експерти во Автомобилските Услуги",
-      // ... existing translations ...
       "about_highlight": "Семеен бизнис со 20-годишна традиција во автомобилските услуги",
       "about_description": "Со богата историја и страст кон автомобилите, нудиме услуги од висок квалитет со користење на најновата технологија и оригинални делови.",
       "feature1_title": "Сертифицирани Техничари",
@@ -399,9 +398,9 @@ function loadTranslations(lang) {
       "gallery2_title": "Сертифицирани техничари",
       "gallery2_desc": "Обучен и сертифициран тим според највисоките стандарди во автомобилската индустрија",
       "gallery3_title": "Модерна опрема",
-      "gallery3_desc": "Најнова технологија за дијагностика",
+      "gallery3_desc": "Напредна опрема за детална дијагностика и безбедни поправки",
       "gallery4_title": "Квалитетен сервис",
-      "gallery4_desc": "Внимание на детали во секоја работа",
+      "gallery4_desc": "Максимално внимание на детали и високи стандарди во секоја услуга",
       "gallery5_title": "Одржливи услуги",
       "gallery5_desc": "Ги применуваме еколошки пријателски практики за одржливо одржување и поправки",
       "gallery6_title": "Гарантиран квалитет",
@@ -448,7 +447,6 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
 
 // Photo slider to gallery.html
 document.addEventListener('DOMContentLoaded', function() {
